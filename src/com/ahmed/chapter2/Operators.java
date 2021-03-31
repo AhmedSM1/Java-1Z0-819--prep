@@ -20,9 +20,12 @@ public class Operators {
     // 14- assignment = += -= *= /= %= &= ^= |= <<= >>= >>>=
 
 
-    public static void main(String[] args) {
+    public static void main(StringAndStringBuilders[] args) {
         System.out.println("postfix and prefix");
         postfixAndPrefixOperator();
+        postFixAndPreFixQuestions();
+
+
         System.out.println("shift");
         shiftOperator();
         System.out.println(" bitwise AND & , bitwise exclusive OR ~ , bitwise inclusive OR |  operators:");
@@ -66,6 +69,39 @@ public class Operators {
         int i = 1,postfix = i++, prefix = ++i ;
         System.out.println("Postfix is assigned first then incremented so postfix = "+ postfix);
         System.out.println("Prefix is incremented first then assigned so prefix  = "+ prefix);
+
+
+    }
+
+
+    private static void postFixAndPreFixQuestions(){
+        System.out.println("Qustion 1 ");
+        int a = 0;
+        int b = 0;
+        if (++a == b-- && --a == b++){
+            // in the first expression ++a == b --
+            // 1 == 0  so false
+            // and then b will become -1
+            // and the second expression --a == b++ wont be evaluated because && is short evaluation
+        }else {
+            System.out.println("a = "+ a);
+            System.out.println("b = "+ b);
+        }
+        System.out.println("Qustion 2 ");
+        int time = 9;
+        int day = 3;
+        var dinner = ++time>= 10 ? day-- <= 2
+                ? "Takeout" : "Salad" : "Leftovers";
+
+        System.out.println(dinner);
+
+        System.out.println("Qustion 3 ");
+        int height = 2, length = 3;
+        boolean w = height> 1 | --length < 4;
+        var x = height!=2 ? length++ : height;
+        boolean z = height % length == 0;
+        System.out.println(w + "-" + x + "-" + z);
+
     }
 
 

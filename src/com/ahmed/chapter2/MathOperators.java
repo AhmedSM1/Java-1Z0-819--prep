@@ -2,7 +2,7 @@ package com.ahmed.chapter2;
 
 public class MathOperators {
 
-    public static void main(String[] args) {
+    public static void main(StringAndStringBuilders[] args) {
         System.out.println(" basic math operators");
         basicMath();
         compoundAssignment();

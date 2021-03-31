@@ -2,7 +2,7 @@ package com.ahmed.chapter2;
 
 public class PrimitiveTypes {
 
-    public static void main(String[] args) {
+    public static void main(StringAndStringBuilders[] args) {
         //java provides 8 primitive type
 
         //whole numbers
@@ -29,7 +29,6 @@ public class PrimitiveTypes {
         char c = '\u0000';
         System.out.println("Default value for char: " + c  + " and it contains 16 bits" );
 
-
     }
 
 
@@ -40,5 +39,6 @@ public class PrimitiveTypes {
     // 3- numeric value can be declared as binary octal decimal and hex
     // 4- smaller types are automatically promoted to bigger types  but bigger types cannot be assigned to smaller types
     // 5- char must be enclosed with single quotes and cannot contain more than one character
+    // 6- primitives cannot be null
 
 }
