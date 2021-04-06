@@ -10,7 +10,7 @@ public class Main {
         //Access modifiers:
         // public - visible to any class
         // protected visible to classes in the same package or to subclasses
-        // <default> visible to classes in the same package
+        // default visible to classes in the same package
         // private only within the same class
 
         System.out.println("Hello world");

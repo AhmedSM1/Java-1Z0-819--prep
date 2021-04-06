@@ -20,7 +20,7 @@ public class Operators {
     // 14- assignment = += -= *= /= %= &= ^= |= <<= >>= >>>=
 
 
-    public static void main(StringAndStringBuilders[] args) {
+    public static void main(String[] args) {
         System.out.println("postfix and prefix");
         postfixAndPrefixOperator();
         postFixAndPreFixQuestions();
@@ -47,6 +47,9 @@ public class Operators {
 
         int a = 25;  // 1 1 0 0 1
         int b = 15;  // 0 1 1 1 1
+
+
+
         int and = a & b; //0 1 0 0 1 -> 9
         System.out.println("bitwise and operator  25 & 15 = "+ and);
 
@@ -66,6 +69,7 @@ public class Operators {
 
 
     private static  void postfixAndPrefixOperator (){
+        //post‐decrement operator can be applied only to variables, not values.
         int i = 1,postfix = i++, prefix = ++i ;
         System.out.println("Postfix is assigned first then incremented so postfix = "+ postfix);
         System.out.println("Prefix is incremented first then assigned so prefix  = "+ prefix);

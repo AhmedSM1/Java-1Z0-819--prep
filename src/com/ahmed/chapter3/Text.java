@@ -1,21 +1,32 @@
 package com.ahmed.chapter3;
 
+import java.util.List;
+
 public class Text {
+
+    //String is immutable and thread safe
+    //StringBuilder is mutable and not thread safe
+    //StringBuffer is mutable and  thread safe
+
+    //Thread safety means that object would not allow multiple threads to modify its content concurrently
+    // Thread safe object --> costs resources and has decremental effect on performance
+    // recommended to use thread unsafe versions
 
     public static void main(String[] args) {
         System.out.println("String initialization");
         jvmWithString();
         stringOperations();
 
-
     }
 
     private static void stringOperations() {
-        //String objects are immutable
+      StringBuilder stringBuilder = new StringBuilder("String builder is mutable");
+      stringBuilder.append("  Appending text doesnt need to create new variable ");
+      System.out.println(stringBuilder);
 
-
-
-
+      String string = "String is immutable";
+      String newVariable = string.concat("Concat needs new variable");
+      System.out.println(string + newVariable);
     }
 
     private static void jvmWithString() {
