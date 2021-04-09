@@ -1,6 +1,8 @@
-package com.ahmed.chapter3;
+package com.ahmed.chapter4;
 
-public class JavaObjectOrientedApproach implements JavaInterface{
+import com.ahmed.chapter4.JavaInterface;
+
+public class JavaObjectOrientedApproach  {
     JavaInterface javaInterface;
 
     int x = 3;
