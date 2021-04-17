@@ -6,10 +6,14 @@ public class Main {
         System.out.println("abstraction Example");
         System.out.println("First subclass Iphone");
         System.out.println("-----------------------------------------------------------");
-        show(new Iphone());
+        new Iphone().specs();
         System.out.println("second subclass samsung galaxy");
         System.out.println("-----------------------------------------------------------");
-        show(new SamsungGalaxy());
+        new SamsungGalaxy().specs();
+        System.out.println("-----------------------------------------------------------");
+
+
+
     }
 
     public static  void show(Phone phone){
