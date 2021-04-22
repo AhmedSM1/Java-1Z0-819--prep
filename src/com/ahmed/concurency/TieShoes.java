@@ -1,6 +1,5 @@
-package com.ahmed.collections;
+package com.ahmed.concurency;
 
-import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 public class TieShoes {
     private Lock shoes = new ReentrantLock();
